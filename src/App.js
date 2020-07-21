@@ -96,7 +96,7 @@ function App() {
   };
 
   const isNotValid =
-    payments.some((payment) => isNaN(+payment.charge) || payment.name == "") ||
+    payments.some((payment) => isNaN(+payment.charge) || payment.name === "") ||
     payments.length < 2;
 
   const renderDialog = () =>
